@@ -1,0 +1,33 @@
+buka git bash di folder yg ingin diupload ke github
+buat repository terlebih menggunakan perinta: git init (nama folder) --> nanti jadi master
+saran ku si buat folder lagi di master biar rapi, master cuma untuk naro kyk catatan gitu2
+
+buat file, nah ini buatnya manual ternyata ga pake perintahd dari git-nya
+habis itu kerjain file kyk biasanya gitu, save filenya kyk biasa
+
+setelah file di save, cek pake perintah ini: git status 
+nanti ada tulisan warna merah, itu tandanya ada perubahan yg belum di simpan
+terus pake perintah: git add (nama file.ekstensi file)
+bertujuan untuk masukin filenya ke mode staged katanya
+
+terus pake perintah: git commit -m "(komennya apa)"
+bertujuan menyimpan perubahannya ke git
+kalo ga diginiin nanti ga kesimpan
+
+setiap ada perubahan ulangi langkah dari git add
+
+terus ada perintah: 
+git log --> melihat log perubahan, 
+git chekout (nama file) --> mengembalikan file dalam kondisi sebelumnya, tapi bersifat sementara
+*referensi1 https://2.bp.blogspot.com/-cqKubTJzwY0/WLvNhaOsuaI/AAAAAAAAEO4/lRrl0Gcc44MfwvbS7ng7NPn5flIZ9CERwCPcB/s1600/git-checkout-masa-lalu.png
+*referensi2 https://www.petanikode.com/git-checkout-reset-revert/
+git reset (nama file) --> akan mengembalikan file ke kondisi sebelumnya, kemudian menghapus catatan sejarah commit beikutnya --> ini bisa menghapus perubahan !berbahaya!
+* apabila file sudah di commit, caranya adalah gunakan git log -> pilih kode commit yg mau dituju -> git chekout (kode commit)
+git revert --> mengambil kondisi file sebelumnya, kemudian menggabukngkannya dengan commit terakhir / mengembalikan file dengan tidak menghapus sejarah commit
+
+++++ proses upload ke github
+*referensi1 https://www.petanikode.com/git-remote
+membuat repository di github
+di git bash ke folder yg mau diupload
+gunakan perintah: git remote add (nama remote bebas) (url remote)
+untuk upload perintahnya: git push (nama remote) (cabang)
