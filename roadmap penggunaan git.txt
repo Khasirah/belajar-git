@@ -3,6 +3,7 @@ buat repository terlebih menggunakan perinta: git init (nama folder) --> nanti j
 saran ku si buat folder lagi di master biar rapi, master cuma untuk naro kyk catatan gitu2
 
 buat file, nah ini buatnya manual ternyata ga pake perintahd dari git-nya
+atau pake "touch (namaFile)"
 habis itu kerjain file kyk biasanya gitu, save filenya kyk biasa
 
 setelah file di save, cek pake perintah ini: git status 
